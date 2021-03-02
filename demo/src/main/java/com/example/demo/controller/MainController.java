@@ -16,6 +16,7 @@ public class MainController {
 
 	@RequestMapping(path = "/increaseThreadCount", method = RequestMethod.GET)
 	public ResponseEntity increaseThreadCount() {
+System.out.println();
 		try {
 			mainService.increaseCount();
 		} catch (Exception e) {
